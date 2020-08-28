@@ -9,9 +9,9 @@ const styles = {
 
     return (
     <div style={styles}>
-        <p>Name: {props.name}</p>
-        <p>Number: {props.number}</p>
-        <p>Email: {props.email}</p>
+        <p>Name: {props.contact.name}</p>
+        <p>Number: {props.contact.number}</p>
+        <p>Email: {props.contact.email}</p>
     </div>
     );
 }

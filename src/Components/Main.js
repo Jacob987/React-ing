@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ContactCard from './ContactCard'
 
 function Main() {
     const styles = {
@@ -10,7 +10,19 @@ function Main() {
 
 
     return (
-        <main style={styles}>This is the main</main>
+        <main style={styles}>
+            This is the main
+            <ContactCard
+                contact=
+                {
+                    {
+                        name: "Jin Ku Kim",
+                        number: "02102428857",
+                        email: "jkkim1998@gmail.com"
+                    }
+                }
+            />
+        </main>
     )
 }
 
