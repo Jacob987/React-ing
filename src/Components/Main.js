@@ -2,14 +2,15 @@ import React from 'react';
 
 
 function Main() {
+    const styles = {
+        backgroundColor: "#ffe0bd",
+        fontSize: 25,
+        marginWidth: 50
+    }
+
+
     return (
-    <main>
-        This is my main tag
-        <ul>
-            <li>Number 1</li>
-            <li>Number 2</li>
-        </ul>
-    </main>
+        <main style={styles}>This is the main</main>
     )
 }
 
