@@ -18,10 +18,26 @@ import React from 'react';
 // }
 
 class Person extends React.Component {
+    constructor() {
+        super();
+        this.state = {};
+    }
+    styling() {
+        const styles = {
+            fontSize: 30,
+            textAlign: "center",
+            margin: "auto",
+            fontFamily: "Helvetica"
+        }
+        return styles;
+    }
+
     render() {
         return (
-            <div>
-                <h2>Stuff goes here</h2>
+            <div style={this.styling()}>
+                <h2>{this.props.name}</h2>
+                <p>Age: {this.props.age}</p>
+                <hr/>
             </div>)
     }
 }
