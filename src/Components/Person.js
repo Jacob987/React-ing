@@ -1,17 +1,30 @@
 import React from 'react';
 
-function Person(props) {
-    const style = {
-        fontSize: 35,
-        textAlign: "center"
+// function Person(props) {
+
+//     const divStyle = {
+//         fontSize: 35,
+//         textAlign: "center"
+//     }
+
+//     const nameStyle = {
+//         fontFamily: "Times New Roman, Times, serif",
+//         fontStyle: "oblique"
+//     }
+
+//     return (
+        
+//     )
+// }
+
+class Person extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Stuff goes here</h2>
+            </div>)
     }
-    return (
-        <div style={style}>
-            <h2>{props.name}</h2>
-            <p>Age: {props.age}</p>
-            <hr style={{width:"50%", borderTop: "10px solid #8c8b8b"}}/>
-        </div>
-    )
 }
 
 export default Person;
+// 2:01:34 
