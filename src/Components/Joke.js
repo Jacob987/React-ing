@@ -8,7 +8,7 @@ function Joke(props) {
         question = "There is no question, just a punchline!"
     }
     return (
-        <div>
+        <div style={{fontSize: 20, textAlign: "center"}}>
             <h3>The question is: {question}</h3>
             <h3>The answer is: {props.punchline}</h3>
             <hr/>
