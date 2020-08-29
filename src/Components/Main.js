@@ -1,11 +1,15 @@
 import React from  'react';
-import DATA from './Data'
+import people from './peopleData'
+import Person from './Person';
 
 function Main() {
+    const peopleComponents = people.map(person => <Person key={person.id} name={person.name} age={person.age}/>)
+
     return (
-    <div>
-        <p>This is the main: {DATA}</p>
-    </div>)
+        <div>
+            {peopleComponents}
+        </div>
+    )
 }
 
 export default Main;
