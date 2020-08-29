@@ -1,19 +1,11 @@
-import React from 'react';
-import Joke from './Joke';
-
+import React from  'react';
+import DATA from './Data'
 
 function Main() {
     return (
-        <div>
-            <Joke
-                punchline="Get pranked!"
-            />
-            <Joke
-                question="How many policemen does it take to change a lightbulb"
-                punchline="I don't know"
-            />
-        </div>
-    )
+    <div>
+        <p>This is the main: {DATA}</p>
+    </div>)
 }
 
-export default Main
+export default Main;
